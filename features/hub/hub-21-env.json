@@ -1,0 +1,37 @@
+{
+  "env": [{
+    "type": "confirm",
+    "name": "EVENTS_HUB",
+    "message": "Enable Events HUB SERVER:",
+    "default": false
+  }, {
+    "type": "input",
+    "name": "EVENTS_HUB_RESTARTS",
+    "message": "Events HUB SERVER have to restart on crash:",
+    "default": 10,
+    "when": "EVENTS_HUB=true"
+  }, {
+    "type": "input",
+    "name": "EVENTS_HUB_PORT",
+    "message": "Port for the Events HUB SERVER instance:",
+    "default": "8085",
+    "when": "EVENTS_HUB=true"
+  }, {
+    "type": "input",
+    "name": "EVENTS_HUB_SECRET",
+    "message": "Secret passphrase for the Events HUB SERVER crypted transfers:",
+    "when": "EVENTS_HUB=true"
+  }, {
+    "type": "confirm",
+    "name": "EVENTS_HUB_TARGET",
+    "message": "Enable Events HUB SERVER connection to other HUBs:",
+    "default": false,
+    "when": "EVENTS_HUB=true"
+  }, {
+    "type": "input",
+    "name": "EVENTS_HUB_TARGET_COUNT",
+    "message": "How many connections:",
+    "default": "1",
+    "when": ["EVENTS_HUB=true", "EVENTS_HUB_TARGET=true"]
+  }]
+}
