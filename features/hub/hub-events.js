@@ -24,7 +24,7 @@ module.exports = function($allonsy, $io) {
     message.noOwner = true;
 
     _sockets.forEach(function(socket) {
-      if (socket == notThisSocket) {
+      if (socket == notThisSocket && (!message.message || !message.message.allSockets)) {
         return;
       }
 
