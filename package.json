@@ -1,9 +1,9 @@
 {
   "name": "allons-y-events-hub",
   "version": "1.0.0",
-  "description": "Propagate sockets events from Express servers to others.",
+  "description": "Propagate crypted sockets events from Express servers to others.",
   "license": "MIT",
-  "homepage": "http://allons-y.io",
+  "homepage": "https://allons-y.io",
   "author": "CodeCorico <hello@codecorico.com>",
   "bugs": "https://github.com/CodeCorico/allons-y-events-hub/issues",
   "repository": {
@@ -14,10 +14,11 @@
     "node": ">=4.1",
     "npm": ">=3.2"
   },
+  "devDependencies": {
+    "allons-y-dev-chore": "^1.0.0"
+  },
   "dependencies": {
-    "allons-y-dotenv": "^1.0.0",
-    "allons-y-express": "^1.0.0",
-    "allons-y-socketio": "^1.0.0",
+    "allons-y-socketio": "^1.0.3",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "socket.io": "^1.4.8"
