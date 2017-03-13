@@ -1,6 +1,6 @@
 {
   "name": "allons-y-events-hub",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Propagate crypted sockets events from Express servers to others.",
   "license": "MIT",
   "homepage": "https://allons-y.io",
